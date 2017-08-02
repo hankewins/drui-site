@@ -1,0 +1,22 @@
+{
+  "name": "@dr/drui-www",
+  "version": "0.0.1",
+  "description": "drui www site",
+  "browser": "index.js",
+  "dr": {
+    "entryPage": "index.html",
+    "jsLoader": "babel",
+    "cssScope": false,
+    "noLint": true
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dianrong",
+    "ui",
+    "dr"
+  ],
+  "author": "AnnatarHe",
+  "license": "UNLICENSED"
+}
