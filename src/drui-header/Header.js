@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { NavLink } from 'react-router-dom'
+import { IndexLink } from 'react-router'
 import styled from 'styled-components'
 import { wrapperPadding, activeColor } from '@dr/drui-www/styles/variables'
 
@@ -38,15 +38,13 @@ class Header extends React.Component {
     navRender() {
         const activeStyle = { color: activeColor, borderBottom: `2px solid ${activeColor}` }
         return this.props.nav.map((n, i) => (
-            <NavLink
+            <IndexLink
                 to={n.path}
                 key={i}
                 activeStyle={activeStyle}
-                exact
-                strict
             >
                 {n.title}
-            </NavLink>
+            </IndexLink>
         ))
     }
 

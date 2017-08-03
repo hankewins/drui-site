@@ -1,21 +1,18 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Router, hashHistory } from 'react-router'
 import styled from 'styled-components'
 import { Header } from '@dr/drui-header'
-import asyncComponent from './asyncComponent'
-import { getSubPath } from './utils'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import Home from './pages/Home'
+import { getSubPath, prefix } from './utils'
 import config from '../../config'
-import './styles/normalize.css'
+import 'normalize.css'
 import './styles/global.css'
+import './styles/global.less'
 import './styles/fonts/Roboto-Regular.ttf'
 
 const Container = styled.div`
 `
-const prefix = process.env.NODE_ENV === 'production' ? '' : '/drui-www'
-
-const Home = asyncComponent('Home', { name: 'Home'})
-const Post = asyncComponent('Post', { name: 'Post'})
-
 const conf = config.map(c => {
     const subPath = getSubPath(c)
     const p = prefix + '/' + c.path + (subPath !== '' ? ('/' + subPath) : '')
@@ -28,20 +25,38 @@ const ContentContainer = styled.main`
     margin-top: 4.769rem;
 `
 
+const Root = ({ children, location }) => {
+    return (
+        <Container>
+            <Header nav={conf} logo={<img src={require('./images/logo.png')} />} />
+                <ReactCSSTransitionGroup
+                    component={ContentContainer}
+                    transitionName="swap"
+                    transitionEnterTimeout={350}
+                    transitionLeaveTimeout={350}
+                >
+                    {React.cloneElement(children || <div />, { key: location.key })}
+                </ReactCSSTransitionGroup>
+        </Container>
+    )
+}
+
+const routes = {
+    path: prefix,
+    component: Root,
+    indexRoute: { component: Home },
+    childRoutes: [
+        { path: ':cate/:sub', getComponent(ns, cb) {
+            require.ensure([], require => {
+                cb(null, require('./pages/Post').default)
+            })
+        }}
+    ]
+}
 
 const App = (props) => {
     return (
-        <BrowserRouter>
-            <Container>
-                <Header nav={conf} logo={<img src={require('./images/logo.png')} />} />
-                <Switch>
-                    <Route exact strict path={prefix + '/'} component={Home} />
-                    <ContentContainer>
-                        <Route strict path={prefix + '/:cate/:sub'} component={Post} />
-                    </ContentContainer>
-                </Switch>
-            </Container>
-        </BrowserRouter>
+        <Router history={hashHistory} routes={routes} />
     )
 }
 

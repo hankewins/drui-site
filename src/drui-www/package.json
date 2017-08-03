@@ -6,7 +6,6 @@
   "dr": {
     "entryPage": "index.html",
     "jsLoader": "babel",
-    "cssScope": false,
     "noLint": true
   },
   "scripts": {

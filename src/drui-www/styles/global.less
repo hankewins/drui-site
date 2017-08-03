@@ -1,0 +1,41 @@
+.drui-www {
+  .swap-enter {
+    opacity: 0.01;
+    transform: translateX(5em);
+    transition: all .35s ease-in;
+  }
+
+  .swap-enter.swap-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .swap-leave {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .35s ease-in;
+  }
+  .swap-leave.swap-leave-active {
+    opacity: 0;
+    transform: translateX(-5em);
+  }
+
+  .fade-enter {
+    opacity: 0.01;
+    transition: all .35s ease-in;
+  }
+
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .fade-leave {
+    opacity: 1;
+    transition: all .35s ease-in;
+  }
+  .fade-leave.fade-leave-active {
+    opacity: 0;
+  }
+}
+
