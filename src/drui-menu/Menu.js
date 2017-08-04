@@ -50,7 +50,7 @@ const MenuItem = ({ cell, parentPath }) => {
         return null
     }
 
-    const path = '/' + parentPath + '/' + cell.path
+    const path = parentPath + '/' + cell.path
     return (
         <li>
             <IndexLink

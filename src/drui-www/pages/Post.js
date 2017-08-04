@@ -8,6 +8,9 @@ import config from '../../../config'
 const Container = styled.div`
     display: flex;
     flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 4.769rem;
 `
 // add markdown style define here
 const Body = styled.div`

@@ -1,38 +1,26 @@
 import faker from 'faker'
+import configJSON from './menu.json'
 
 faker.locale = 'zh_CN'
 
-const config = [{
-    title: '首页',
-    path: '',
-}, {
-    title: '设计指引',
-    path: 'way',
-    menu: [{
-        title: "设计理念与原则",
-        menu: [{
-            title: '设计理念',
-            path: 'idea',
-            content: require('./README.md')
-        }]
-    }]
-}, {
-    title: '设计规范',
-    path: 'guide',
-    menu: [{
-        title: '设计理念',
-        path: 'idea',
-        content: require('./README.md')
-    }]
-}, {
-    title: '组件库',
-    path: 'repo',
-    menu: [{
-        title: '设计理念',
-        path: 'idea',
-        content: require('./README.md')
-    }]
-}]
+function convertConfig(conf) {
+    if (Array.isArray(conf)) {
+        conf.forEach(item => {
+            convertConfig(item)
+        })
+    } else {
+        if (conf.menu) {
+            convertConfig(conf.menu)
+        }
+
+        if (conf.content) {
+            conf.content = require('./posts/' + conf.content)
+        }
+    }
+    return conf
+}
+
+const config = convertConfig(configJSON)
 
 for (let i = 0; i < 5; i++) {
     let aMenu = {

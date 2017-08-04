@@ -22,27 +22,30 @@ const conf = config.map(c => {
     }
 })
 const ContentContainer = styled.main`
-    margin-top: 4.769rem;
 `
 
-const Root = ({ children, location }) => {
+const Root = ({ children, location, params }) => {
     return (
         <Container>
-            <Header nav={conf} logo={<img src={require('./images/logo.png')} />} />
-                <ReactCSSTransitionGroup
-                    component={ContentContainer}
-                    transitionName="swap"
-                    transitionEnterTimeout={350}
-                    transitionLeaveTimeout={350}
-                >
-                    {React.cloneElement(children || <div />, { key: location.key })}
-                </ReactCSSTransitionGroup>
+            <Header
+                nav={conf}
+                logo={<img src={require('./images/logo.png')} />}
+                params={params}
+            />
+            <ReactCSSTransitionGroup
+                component={ContentContainer}
+                transitionName="swap"
+                transitionEnterTimeout={350}
+                transitionLeaveTimeout={350}
+            >
+                {React.cloneElement(children || <div />, { key: location.key })}
+            </ReactCSSTransitionGroup>
         </Container>
     )
 }
 
 const routes = {
-    path: prefix,
+    path: '/',
     component: Root,
     indexRoute: { component: Home },
     childRoutes: [

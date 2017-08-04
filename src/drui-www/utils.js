@@ -1,6 +1,6 @@
 import config from '../../config'
 
-export const prefix = process.env.NODE_ENV === 'production' ? '' : '/drui-www'
+export const prefix = ''
 
 export function getPathname() {
     const path = location.pathname.split('/').filter(i => i !== '')

@@ -1,15 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { IndexLink } from 'react-router'
+import { IndexLink, withRouter } from 'react-router'
 import styled from 'styled-components'
 import { wrapperPadding, activeColor } from '@dr/drui-www/styles/variables'
 
+const activeStyle = { color: activeColor, borderBottom: `2px solid ${activeColor}` }
+
 const HeaderWithStyle = styled.header`
-    display: flex;
     width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 ${wrapperPadding};
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, .7);
@@ -17,6 +15,15 @@ const HeaderWithStyle = styled.header`
     position: fixed;
     top: 0;
     left: 0;
+`
+
+const Wrapper = styled.div`
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
 `
 
 const NavWithStyle = styled.nav`
@@ -36,12 +43,12 @@ class Header extends React.Component {
     }
 
     navRender() {
-        const activeStyle = { color: activeColor, borderBottom: `2px solid ${activeColor}` }
-        return this.props.nav.map((n, i) => (
+        const { nav, params: { cate }} = this.props
+        return nav.map((n, i) => (
             <IndexLink
                 to={n.path}
                 key={i}
-                activeStyle={activeStyle}
+                style={n.path.indexOf(cate) === 1 ? activeStyle : null}
             >
                 {n.title}
             </IndexLink>
@@ -51,8 +58,10 @@ class Header extends React.Component {
     render() {
         return (
             <HeaderWithStyle>
+                <Wrapper>
                 <div>{this.props.logo}</div>
                 <NavWithStyle>{this.navRender()}</NavWithStyle>
+                </Wrapper>
             </HeaderWithStyle>
         )
     }
@@ -63,8 +72,9 @@ Header.propTypes = {
     nav: PropTypes.arrayOf(PropTypes.shape({
         path: PropTypes.string,
         title: PropTypes.string
-    }))
+    })),
+    params: PropTypes.object
 }
 
-export default Header
+export default withRouter(Header)
 
