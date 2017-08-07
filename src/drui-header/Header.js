@@ -43,12 +43,17 @@ class Header extends React.Component {
     }
 
     navRender() {
-        const { nav, params: { cate }} = this.props
+        const { nav, params: { cate }, currentPath } = this.props
         return nav.map((n, i) => (
             <IndexLink
                 to={n.path}
                 key={i}
                 style={n.path.indexOf(cate) === 1 ? activeStyle : null}
+                onClick={e => {
+                    if (currentPath === n.path) {
+                        e.preventDefault()
+                    }
+                }}
             >
                 {n.title}
             </IndexLink>
@@ -59,8 +64,8 @@ class Header extends React.Component {
         return (
             <HeaderWithStyle>
                 <Wrapper>
-                <div>{this.props.logo}</div>
-                <NavWithStyle>{this.navRender()}</NavWithStyle>
+                    <div>{this.props.logo}</div>
+                    <NavWithStyle>{this.navRender()}</NavWithStyle>
                 </Wrapper>
             </HeaderWithStyle>
         )

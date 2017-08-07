@@ -31,6 +31,7 @@ const Root = ({ children, location, params }) => {
                 nav={conf}
                 logo={<img src={require('./images/logo.png')} />}
                 params={params}
+                currentPath={location.pathname}
             />
             <ReactCSSTransitionGroup
                 component={ContentContainer}
