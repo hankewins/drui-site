@@ -1,0 +1,53 @@
+html.drui-www {
+    font-size: 13px;
+    font-family: 'Roboto', 'PingFang SC', sans-serif;
+}
+.drui-www .swap-enter {
+  opacity: 0.01;
+  -webkit-transform: translateX(5em);
+      -ms-transform: translateX(5em);
+          transform: translateX(5em);
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+.drui-www .swap-enter.swap-enter-active {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.drui-www .swap-leave {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+.drui-www .swap-leave.swap-leave-active {
+  opacity: 0;
+  -webkit-transform: translateX(-5em);
+      -ms-transform: translateX(-5em);
+          transform: translateX(-5em);
+}
+.drui-www .fade-enter {
+  opacity: 0.01;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+.drui-www .fade-enter.fade-enter-active {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.drui-www .fade-leave {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+.drui-www .fade-leave.fade-leave-active {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=drui-www.css.map*/
