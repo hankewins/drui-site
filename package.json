@@ -1,0 +1,31 @@
+{
+  "name": "drui-site",
+  "version": "0.0.1",
+  "description": "drui site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "bisheng start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dr-web-house/drui-site.git"
+  },
+  "keywords": [
+    "drui",
+    "dianrong",
+    "dr",
+    "compoents",
+    "design"
+  ],
+  "author": "AnnatarHe",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/dr-web-house/drui-site/issues"
+  },
+  "homepage": "https://github.com/dr-web-house/drui-site#readme",
+  "dependencies": {
+    "bisheng": "^0.24.2",
+    "bisheng-theme-one": "^0.2.18"
+  }
+}
