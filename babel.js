@@ -104,4 +104,3 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /***/ })
 
 });
-//# sourceMappingURL=babel.js.map

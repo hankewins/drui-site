@@ -36,4 +36,3 @@ function init() {
 /***/ })
 
 });
-//# sourceMappingURL=common-app.js.map

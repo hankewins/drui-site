@@ -141,4 +141,3 @@ var Menu = function (_React$PureComponent) {
 /***/ })
 
 });
-//# sourceMappingURL=1.drui-menu.split.js.map

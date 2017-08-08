@@ -96,4 +96,3 @@ var Post = function (_React$PureComponent) {
 /***/ })
 
 });
-//# sourceMappingURL=2.drui-www.split.js.map
