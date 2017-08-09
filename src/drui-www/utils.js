@@ -1,4 +1,4 @@
-import config from '../../config'
+import config from '@dr/drui-config'
 
 export const prefix = ''
 

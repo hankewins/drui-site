@@ -19,20 +19,20 @@
   "author": "AnnatarHe",
   "license": "UNLICENSED",
   "dependencies": {
+    "faker": "^4.1.0",
     "normalize.css": "^7.0.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-markdown": "^2.5.0",
     "react-router": "2.8.1",
-    "styled-components": "^2.1.1",
-    "prop-types": "^15.5.10"
+    "styled-components": "^2.1.1"
   },
-  "devDependencies": {
-    "faker": "^4.1.0"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "@dr/drui-header": "",
-    "@dr/drui-menu": ""
+    "@dr/drui-menu": "",
+    "@dr/drui-config": ""
   }
 }

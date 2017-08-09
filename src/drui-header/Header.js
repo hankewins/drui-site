@@ -15,6 +15,7 @@ const HeaderWithStyle = styled.header`
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
 `
 
 const Wrapper = styled.div`
@@ -34,6 +35,9 @@ const NavWithStyle = styled.nav`
         padding: 1.65rem;
         font-size: 16px;
         color: #666666;
+        &:hover {
+            color: ${activeColor};
+        }
     }
 `
 
@@ -48,7 +52,7 @@ class Header extends React.Component {
             <IndexLink
                 to={n.path}
                 key={i}
-                style={n.path.indexOf(cate) === 1 ? activeStyle : null}
+                style={(n.path.indexOf(cate) === 1 || (typeof cate === 'undefined' && n.path === '/')) ? activeStyle : null}
                 onClick={e => {
                     if (currentPath === n.path) {
                         e.preventDefault()
