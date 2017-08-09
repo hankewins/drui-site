@@ -1,14 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Img = styled.img`
+const Background = styled.div`
     width: 100%;
-    height: 900px;
+    height: 100vh;
+    background-color: #439ab4;
+    background-image: url(${require('../images/bg.jpg')});
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+`
+
+const Text = styled.img`
+    position: absolute;
+    top: 21rem;
+    left: 6.385rem;
+    width: 37.23rem;
 `
 
 const Home = () => {
     return (
-        <Img src={require('../images/bg.png')} alt="drui" />
+        <Background><Text src={require('../images/home-text.png')} alt="ddc"/></Background>
     )
 }
 

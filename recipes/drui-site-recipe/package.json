@@ -5,6 +5,7 @@
   "dependencies": {
     "@dr/drui-header": "0.0.1",
     "@dr/drui-menu": "0.0.1",
-    "@dr/drui-www": "0.0.1"
+    "@dr/drui-www": "0.0.1",
+    "@dr/drui-config": "0.0.1"
   }
 }

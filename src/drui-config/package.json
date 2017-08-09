@@ -1,0 +1,23 @@
+{
+  "name": "@dr/drui-config",
+  "version": "0.0.1",
+  "description": "drui config",
+  "main": "index.js",
+  "dr": {
+    "entryPage": "index.js",
+    "jsLoader": "babel",
+    "noLint": true
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dianrong",
+    "dr"
+  ],
+  "author": "AnnatarHe",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}

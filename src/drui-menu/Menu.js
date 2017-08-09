@@ -6,9 +6,23 @@ import { activeColor } from '@dr/drui-www/styles/variables'
 
 const MenuContaienr = styled.div`
     width: 19.23rem;
-    background: #ffffff;
+    background-color: #fff;
     box-shadow: 1px 0 0 0 #eaedf2;
-    min-height: calc(100vh - 4.769rem);
+    height: calc(100vh - 4.769rem);
+    overflow-y: scroll;
+    z-index: 2;
+    &::-webkit-scrollbar {
+        width: 1rem;
+        background-color: #fff;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: .8rem;
+        background-color: #e4e4e4;
+        border-radius: 8px;
+    }
 `
 
 const MenuSection = styled.div`
@@ -65,10 +79,6 @@ const MenuItem = ({ cell, parentPath }) => {
 }
 
 class Menu extends React.PureComponent {
-    constructor(props) {
-        super(props)
-    }
-
     menuRender() {
         const { menu, params } = this.props
         const rootMenu = menu.find(item => item.path === params.cate)
@@ -92,7 +102,7 @@ class Menu extends React.PureComponent {
 
     render() {
         return (
-            <MenuContaienr>
+            <MenuContaienr ref={root => this.root = root}>
                 {this.menuRender()}
             </MenuContaienr>
         )
