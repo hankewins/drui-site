@@ -26,7 +26,7 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 ### 调整目录结构
 
-然后回到 drui-site 主页，点击 `menu.json`, 单击铅笔图标
+然后回到 drui-site 主页，进入文件 `src` -> `drui-config` -> `menu.json`, 单击铅笔图标
 
 ![](docs/edit-menu.png)
 
