@@ -6,9 +6,9 @@ import config from '@dr/drui-config'
 const Container = styled.div`
     display: flex;
     flex-direction: row;
-    max-width: 1440px;
     margin: 0 auto;
     margin-top: 4.769rem;
+    min-width: 768px;
 `
 
 const Post = ({ params, children }) => (
