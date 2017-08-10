@@ -30,7 +30,8 @@ const MenuSection = styled.div`
     h3 {
         font-size: 12px;
         color: #cccccc;
-        font-weight: 500;
+        font-weight: 100;
+        transform: scale(0.9166666) translateX(-.75rem);
     }
 
     &:first-child {
@@ -41,6 +42,8 @@ const MenuSection = styled.div`
     &:first-child h3, h3[data-black^=true] {
         font-size: 13px;
         color: #333333;
+        font-weight: 500;
+        transform: scale(1) translateX(0);
     }
 
     ul {
