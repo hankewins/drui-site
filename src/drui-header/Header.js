@@ -8,6 +8,7 @@ const activeStyle = { color: activeColor, borderBottom: `2px solid ${activeColor
 
 const HeaderWithStyle = styled.header`
     width: 100%;
+    min-width: 768px;
     padding: 0 ${wrapperPadding};
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, .7);
@@ -23,7 +24,6 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     display: flex;
-    max-width: 1440px;
     margin: 0 auto;
 `
 
@@ -32,7 +32,10 @@ const NavWithStyle = styled.nav`
 
     a {
         text-decoration: none;
-        padding: 1.65rem;
+        padding: 1.65rem 0;
+        width: 80px;
+        text-align: center;
+        margin: 0 20px;
         font-size: 16px;
         color: #666666;
         &:hover {

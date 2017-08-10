@@ -30,7 +30,7 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 ![](docs/edit-menu.png)
 
-找到适合的层级结构，写入对应的 `title`, `path` 和 `content`
+找到适合的层级结构，写入对应的 `title`, `path` 和 `content`, 如果此条属于大的分类，请加入字段`"type": "black"` 表明这个结构应该用黑色字显示
 
 ![](docs/menu-content.png)
 

@@ -5,21 +5,21 @@ import { prefix } from '@dr/drui-www/utils'
 import { activeColor } from '@dr/drui-www/styles/variables'
 
 const MenuContaienr = styled.div`
-    width: 19.23rem;
+    width: 21rem;
     background-color: #fff;
     box-shadow: 1px 0 0 0 #eaedf2;
     height: calc(100vh - 4.769rem);
     overflow-y: scroll;
     z-index: 2;
     &::-webkit-scrollbar {
-        width: 1rem;
+        width: .6154rem;
         background-color: #fff;
     }
     &::-webkit-scrollbar-button {
         display: none;
     }
     &::-webkit-scrollbar-thumb {
-        width: .8rem;
+        width: .6145rem;
         background-color: #e4e4e4;
         border-radius: 8px;
     }
@@ -28,8 +28,10 @@ const MenuContaienr = styled.div`
 const MenuSection = styled.div`
     padding: 0 1.846rem;
     h3 {
-        font-size: 13px;
+        font-size: 12px;
         color: #cccccc;
+        font-weight: 100;
+        transform: scale(0.9166666) translateX(-.75rem);
     }
 
     &:first-child {
@@ -37,14 +39,16 @@ const MenuSection = styled.div`
     }
 
 
-    &:first-child h3 {
-        font-size: 12px;
+    &:first-child h3, h3[data-black^=true] {
+        font-size: 13px;
         color: #333333;
+        font-weight: 500;
+        transform: scale(1) translateX(0);
     }
 
     ul {
         list-style: none;
-        padding-left: 2rem;
+        padding-left: .3069rem;
     }
 
     ul li {
@@ -56,11 +60,14 @@ const MenuSection = styled.div`
         display: block;
         color: #666666;
         font-size: 13px;
+        &:hover {
+            color: ${activeColor};
+        }
     }
 `
 
 const MenuItem = ({ cell, parentPath }) => {
-    if (! cell) {
+    if (!cell) {
         return null
     }
 
@@ -78,6 +85,12 @@ const MenuItem = ({ cell, parentPath }) => {
     )
 }
 
+const Block = styled.div`
+    display: block;
+    height: 1px;
+    width: 1px;
+`
+
 class Menu extends React.PureComponent {
     menuRender() {
         const { menu, params } = this.props
@@ -87,14 +100,17 @@ class Menu extends React.PureComponent {
         }
 
         return rootMenu.menu.map((item, index) => {
+            const hasMenu = item.menu && item.menu.length > 0
             return (
                 <MenuSection key={index}>
-                    <h3>{item.title}</h3>
-                    <ul>
-                        {item.menu && item.menu.map((cell, _i) => (
-                            <MenuItem cell={cell} parentPath={prefix.replace('/', '') + '/' + rootMenu.path} key={_i} />
-                        ))}
-                    </ul>
+                    <h3 data-black={item.type === 'black'}>{item.title}</h3>
+                    {hasMenu ? (
+                        <ul>
+                            {item.menu && item.menu.map((cell, _i) => (
+                                <MenuItem cell={cell} parentPath={prefix.replace('/', '') + '/' + rootMenu.path} key={_i} />
+                            ))}
+                        </ul>
+                    ) : <Block />}
                 </MenuSection>
             )
         })
