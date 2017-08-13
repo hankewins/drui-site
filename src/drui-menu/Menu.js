@@ -5,6 +5,11 @@ import { prefix } from '@dr/drui-www/utils'
 import { activeColor } from '@dr/drui-www/styles/variables'
 
 const MenuContaienr = styled.div`
+    box-shadow: 1px 0 0 0 #eaedf2;
+    z-index: 2;
+`
+
+const Border = styled.div`
     width: 21rem;
     background-color: #fff;
     box-shadow: 1px 0 0 0 #eaedf2;
@@ -119,7 +124,9 @@ class Menu extends React.PureComponent {
     render() {
         return (
             <MenuContaienr ref={root => this.root = root}>
+              <Border>
                 {this.menuRender()}
+              </Border>
             </MenuContaienr>
         )
     }
