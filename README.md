@@ -56,6 +56,24 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 告知维护的开发人员，他在看过没问题之后会合并入主分支，页面上就会有所体现。
 
+## 图片添加
+
+请将图片粘贴进入项目根目录下的 **images** 目录下，可以自行开文件夹整理，然后在 .md 文件中这样引用即可：
+
+```md
+![](../images/foo.jpg)
+```
+
+> 请注意： `../` 是必须的，请务必加上。**foo.jpg**可以改成对应的目录结构
+
+如果需要图片浮动在右边，请改用 html 标签的形式。
+
+```html
+<img src="../images/demo.jpg" alt="需要添加的标题" description="一些解释性文字" align="right" />
+```
+
+**align**属性中表明是浮动在右边的
+
 ## 附录
 
 [markdown 语法学习](https://guides.github.com/features/mastering-markdown/)

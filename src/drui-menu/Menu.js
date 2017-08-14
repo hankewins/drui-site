@@ -10,6 +10,9 @@ const MenuContaienr = styled.div`
 `
 
 const Border = styled.div`
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
     width: 21rem;
     background-color: #fff;
     box-shadow: 1px 0 0 0 #eaedf2;
