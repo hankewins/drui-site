@@ -49,6 +49,8 @@ class Content extends React.Component {
         fetch(src)
             .then(res => res.text())
             .then(adjustImageLocation)
+            // 简单判断一下是否是个完整 html 页面
+            .then(data => data.includes('<!DOCTYPE html>') ? Promise.reject(404) : data)
             .then(content => { this.setState({ content }) })
             .catch(e => {
                 console.error(e)
