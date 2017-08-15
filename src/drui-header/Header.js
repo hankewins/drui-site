@@ -11,7 +11,7 @@ const HeaderWithStyle = styled.header`
     min-width: 768px;
     padding: 0 ${wrapperPadding};
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, .7);
+    background-color: ${({hasOpacity}) => hasOpacity ? 'rgba(255, 255, 255, .7)' : 'rgb(255, 255, 255)'};
     box-shadow: 0 1px 0 0 #eaedf2;
     position: fixed;
     top: 0;
@@ -68,8 +68,9 @@ class Header extends React.Component {
     }
 
     render() {
+        const { cate, sub } = this.props.params
         return (
-            <HeaderWithStyle>
+            <HeaderWithStyle hasOpacity={!cate && !sub}>
                 <Wrapper>
                     <div>{this.props.logo}</div>
                     <NavWithStyle>{this.navRender()}</NavWithStyle>

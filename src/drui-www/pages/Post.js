@@ -9,6 +9,7 @@ const Container = styled.div`
     margin: 0 auto;
     margin-top: 4.769rem;
     min-width: 768px;
+    height: calc(100vh - 4.769rem);
 `
 
 const Post = ({ params, children }) => (

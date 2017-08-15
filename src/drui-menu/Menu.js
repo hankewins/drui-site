@@ -16,7 +16,7 @@ const Border = styled.div`
     width: 21rem;
     background-color: #fff;
     box-shadow: 1px 0 0 0 #eaedf2;
-    height: calc(100vh - 4.769rem);
+    height: 100%;
     overflow-y: scroll;
     z-index: 2;
     &::-webkit-scrollbar {
@@ -46,7 +46,6 @@ const MenuSection = styled.div`
         padding-top: 1.380rem;
     }
 
-
     &:first-child h3, h3[data-black^=true] {
         font-size: 13px;
         color: #333333;
@@ -54,16 +53,25 @@ const MenuSection = styled.div`
         transform: scale(1) translateX(0);
     }
 
+    &:first-child h3 {
+        margin-bottom: 1.3rem;
+    }
+
+    h3[data-black^=false] {
+        margin: 5px 0;
+    }
+
     ul {
         list-style: none;
         padding-left: .3069rem;
+        margin: 0 0 1px 0;
     }
 
     ul li {
     }
 
     ul li a {
-        padding: 1.231rem;
+        padding: 1rem;
         text-decoration: none;
         display: block;
         color: #666666;
@@ -111,7 +119,7 @@ class Menu extends React.PureComponent {
             const hasMenu = item.menu && item.menu.length > 0
             return (
                 <MenuSection key={index}>
-                    <h3 data-black={item.type === 'black'}>{item.title}</h3>
+                    <h3 data-black={item.type === 'black' || index === 0}>{item.title}</h3>
                     {hasMenu ? (
                         <ul>
                             {item.menu && item.menu.map((cell, _i) => (

@@ -6,6 +6,20 @@ import { findContentURL, adjustImageLocation } from '../utils'
 const Body = styled.div`
     background-color: #f8f9fb;
     padding: 5.154rem 7.923rem;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: .6154rem;
+        background-color: #f8f9fb;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: .6145rem;
+        background-color: #e4e4e4;
+        border-radius: 8px;
+    }
 
     h1 {
         font-size: 32px;
