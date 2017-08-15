@@ -41,6 +41,10 @@ class Content extends React.Component {
 
     componentDidMount() {
         const { cate, sub } = this.props.params
+        this.loadContent(cate, sub)
+    }
+
+    loadContent(cate, sub) {
         const src = findContentURL(cate, sub)
         if (!src) {
             this.loadError()
@@ -56,6 +60,14 @@ class Content extends React.Component {
                 console.error(e)
                 this.loadError()
             })
+    }
+
+    componentWillReceiveProps(np) {
+        const { cate, sub } = this.props.params
+        const { cate: newCate, sub: newSub } = np.params
+        if (cate !== newCate || sub !== newSub) {
+            this.loadContent(newCate, newSub)
+        }
     }
 
     loadError() {
