@@ -25,7 +25,6 @@ export function getSubPath(conf) {
     return ''
 }
 
-const noContentTip = '# 暂时还没有内容，敬请期待...'
 
 function findSubMenu(menu, sub) {
     for (let item of menu) {
@@ -41,18 +40,48 @@ function findSubMenu(menu, sub) {
     }
 }
 
-export function findContent(cate, sub) {
+export function findContentURL(cate, sub) {
     const cateMenu = config.find(item => item.path === cate)
     if (! cateMenu || ! Array.isArray(cateMenu.menu) || cateMenu.menu.length === 0) {
-        return noContentTip
+        return null
     }
 
     const subMenu = findSubMenu(cateMenu.menu, sub)
     if (! subMenu || ! subMenu.content) {
-        return noContentTip
+        return null
     }
 
     return subMenu.content
-
 }
 
+/**
+ * @param string dom
+ * @return string
+ */
+export function adjustImageLocation(dom) {
+    const result = dom.replace(/<img.*src=".*".*\/?>/g, img => {
+        // 获取四个属性
+        const alt = getAttr(img, "alt")
+        // TODO: lazyload
+        const src = getAttr(img, "src")
+
+        let align = getAttr(img, "align")
+        align = align === "" ? "" : `float: ${align}`
+
+        const description = getAttr(img, "description")
+        return `
+            <div class="md-image clearfix" style="${align}">
+                <img src="${src}" />
+                <strong>${alt}</strong>
+                <p>${description}</p>
+            </div>
+        `
+    })
+    return result
+}
+
+function getAttr(src, name) {
+    // 非贪婪匹配用 ?
+    const result = src.match(new RegExp(name + '="(.+?)"'))
+    return result ? result[1] : ""
+}

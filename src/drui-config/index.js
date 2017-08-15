@@ -1,7 +1,4 @@
-import faker from 'faker'
 import configJSON from './menu.json'
-
-faker.locale = 'zh_CN'
 
 function convertConfig(conf) {
     if (Array.isArray(conf)) {
@@ -14,7 +11,7 @@ function convertConfig(conf) {
         }
 
         if (conf.content) {
-            conf.content = require('../../posts/' + conf.content)
+            conf.content = require('!lib/dr-file-loader?name=[path][name].[md5:hash:hex:8].html!lib/html-loader!lib/markdown-loader!../../posts/' + conf.content)
         }
     }
     return conf

@@ -1,18 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import Markdown from 'react-markdown'
-import { findContent } from '../utils'
+import { findContentURL, adjustImageLocation } from '../utils'
 
 // add markdown style define here
 const Body = styled.div`
-    display: flex;
-    flex: 1;
     background-color: #f8f9fb;
     padding: 5.154rem 7.923rem;
 
     h1 {
         font-size: 32px;
         color: #333333;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        clear: both;
     }
 
     h2 {
@@ -35,20 +36,33 @@ const Body = styled.div`
 
 class Content extends React.Component {
     state = {
-        content: '# 加载中...'
+        content: '<h1>加载中...</h1>'
     }
 
     componentDidMount() {
         const { cate, sub } = this.props.params
-        const content = findContent(cate, sub)
-        this.setState({ content })
+        const src = findContentURL(cate, sub)
+        if (!src) {
+            this.loadError()
+        }
+
+        fetch(src)
+            .then(res => res.text())
+            .then(adjustImageLocation)
+            .then(content => { this.setState({ content }) })
+            .catch(e => {
+                console.error(e)
+                this.loadError()
+            })
+    }
+
+    loadError() {
+        this.setState({ content: '<h1>暂时还没有内容，敬请期待...</h1>'})
     }
 
     render() {
         return (
-            <Body>
-                <Markdown source={this.state.content} />
-            </Body>
+            <Body dangerouslySetInnerHTML={{ __html: this.state.content }} />
         )
     }
 

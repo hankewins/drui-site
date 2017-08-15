@@ -20,7 +20,6 @@
   "author": "AnnatarHe",
   "license": "UNLICENSED",
   "dependencies": {
-    "faker": "^4.1.0",
     "normalize.css": "^7.0.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
@@ -32,8 +31,8 @@
   },
   "devDependencies": {},
   "peerDependencies": {
+    "@dr/drui-config": "",
     "@dr/drui-header": "",
-    "@dr/drui-menu": "",
-    "@dr/drui-config": ""
+    "@dr/drui-menu": ""
   }
 }
