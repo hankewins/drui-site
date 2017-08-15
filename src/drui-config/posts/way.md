@@ -22,9 +22,19 @@ no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ## 其他章节
 
+<img src="../images/dr-logo.png" alt="需要添加的标题" description="一些解释性文字" align="right" />
+
+
 模块一|hello|foo
 ------|-----|---
 hello|world|drui
 drui2|dfasd|drui3
 hello|world|drui
 drui2|dfasd|drui3
+
+## FOO
+
+test
+
+![](../images/dr-logo.png)
+

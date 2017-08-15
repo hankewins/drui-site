@@ -11,7 +11,7 @@ function convertConfig(conf) {
         }
 
         if (conf.content) {
-            conf.content = require('!lib/dr-file-loader?name=[path][name].[md5:hash:hex:8].html!lib/html-loader!lib/markdown-loader!../../posts/' + conf.content)
+            conf.content = require('!lib/dr-file-loader?name=[path][name].[md5:hash:hex:8].html!lib/html-loader!lib/markdown-loader!./posts/' + conf.content)
         }
     }
     return conf

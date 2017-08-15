@@ -4,15 +4,15 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 ## 文章编写
 
-### 开分支
+### 1. 开分支
 
 首先打开项目，点击 `branch` 输入一个分支名
 
 ![](docs/create-branch.png)
 
-### 编辑内容
+### 2. 编辑内容
 
-单击 `posts`，进入页面后点击 `create new file`
+进入目录 `src` -> `drui-config` -> `posts`，进入页面后点击 `create new file`
 
 ![](docs/create-new-file.png)
 
@@ -24,7 +24,7 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 ![](docs/commit-file.png)
 
-### 调整目录结构
+### 3. 调整目录结构
 
 然后回到 drui-site 主页，进入文件 `src` -> `drui-config` -> `menu.json`, 单击铅笔图标
 
@@ -36,7 +36,7 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 依旧是点击底部一个绿色的 `Commit changes`, 这样，菜单栏的 `设计指引` -> `设计理念与原则` -> `你好啊` 就被创建成功了，但是依旧不能立即查看到。
 
-### Pull Request
+### 4. Pull Request
 
 点击上面的 `Pull request` 的 Tab, 然后点击右边绿色的 `New pull request`
 
@@ -58,7 +58,7 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 ## 图片添加
 
-请将图片粘贴进入项目根目录下的 **images** 目录下，可以自行开文件夹整理，然后在 .md 文件中这样引用即可：
+请将图片粘贴进入项目`src` -> `drui-config` 下的 **images** 目录下，可以自行开文件夹整理，然后在 .md 文件中这样引用即可：
 
 ```md
 ![](../images/foo.jpg)
@@ -72,7 +72,15 @@ DRUI Design guide line site 点融UXUI设计文档站
 <img src="../images/demo.jpg" alt="需要添加的标题" description="一些解释性文字" align="right" />
 ```
 
-**align**属性中表明是浮动在右边的
+* **align**属性中表明是浮动在右边的
+
+* **alt** 属性会显示在图片底部，属于简单的 title
+
+* **description** 属性会显示在 alt 下面，可以简单地写一些比较长的文字，但是不能换行
+
+如图所示:
+
+![](docs/image-preview.png)
 
 ## 附录
 

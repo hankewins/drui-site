@@ -41,6 +41,10 @@ class Content extends React.Component {
 
     componentDidMount() {
         const { cate, sub } = this.props.params
+        this.loadContent(cate, sub)
+    }
+
+    loadContent(cate, sub) {
         const src = findContentURL(cate, sub)
         if (!src) {
             this.loadError()
@@ -49,11 +53,21 @@ class Content extends React.Component {
         fetch(src)
             .then(res => res.text())
             .then(adjustImageLocation)
+            // 简单判断一下是否是个完整 html 页面
+            .then(data => data.includes('<!DOCTYPE html>') ? Promise.reject(404) : data)
             .then(content => { this.setState({ content }) })
             .catch(e => {
                 console.error(e)
                 this.loadError()
             })
+    }
+
+    componentWillReceiveProps(np) {
+        const { cate, sub } = this.props.params
+        const { cate: newCate, sub: newSub } = np.params
+        if (cate !== newCate || sub !== newSub) {
+            this.loadContent(newCate, newSub)
+        }
     }
 
     loadError() {
