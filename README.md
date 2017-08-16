@@ -66,7 +66,7 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 > 请注意： `../` 是必须的，请务必加上。**foo.jpg**可以改成对应的目录结构
 
-如果需要图片浮动在右边，请改用 html 标签的形式。
+如果需要图片浮动在右边，请改用 html 标签的形式。而且写文章的时候需要把图片写在文字前面。
 
 ```html
 <img src="../images/demo.jpg" alt="需要添加的标题" description="一些解释性文字" align="right" />

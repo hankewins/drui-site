@@ -7,6 +7,7 @@ const Body = styled.div`
     background-color: #f8f9fb;
     padding: 5.154rem 7.923rem;
     overflow-y: scroll;
+    width: 100%;
 
     &::-webkit-scrollbar {
         width: .6154rem;
