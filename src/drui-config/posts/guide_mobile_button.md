@@ -32,13 +32,11 @@
 
 需要注意，消极提醒通常只适用于会造成难以反悔甚至不可逆的消极操作。**不可滥用**，否则一来会削弱必要提醒时的作用，二来会使得用户时刻感到不安。
 
-<img src="http://odmhu1f2h.bkt.clouddn.com/15028515351254.png" width="375" height="226" align="right"/>
-
 ## 可点击区域
 
 设计师在验收设计时需要特别留意按钮的可点击区域，**尤其是纯文字按钮**。
 
-<img src="http://odmhu1f2h.bkt.clouddn.com/15028671339526.jpg" width="375px" height="262px" align="right"/>
+<img src="http://odmhu1f2h.bkt.clouddn.com/15028671339526.jpg" width="375px" height="262px" description="MIT实验指出指尖尺寸在8-10mm" align="right"/>
 
 MIT Touch Lab的[实验报告](http://touchlab.mit.edu/publications/2003_009.pdf)指出多数人的指尖(Finger tip)尺寸在8-10mm,指垫(Finger pad)在10-14mm。
 
