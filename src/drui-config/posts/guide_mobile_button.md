@@ -28,7 +28,7 @@
 ## 可点击区域
 设计师在验收设计时需要特别留意按钮的可点击区域，**尤其是纯文字按钮**。
 
-<img src="http://odmhu1f2h.bkt.clouddn.com/15028671339526.jpg" width="375px" height="262px" align="right"/>
+<img src="http://odmhu1f2h.bkt.clouddn.com/15028671339526.jpg" width="375px" height="262px" description="MIT实验指出指尖尺寸在8-10mm" align="right"/>
 MIT Touch Lab的[实验报告](http://touchlab.mit.edu/publications/2003_009.pdf)指出多数人的指尖(Finger tip)尺寸在8-10mm,指垫(Finger pad)在10-14mm。
 
 基于326dpi屏幕，Apple iOS HIG 建议**按钮的可点击区域不应小于44dp X 44dp**。(注意：可点击区域与显示区域可以不一致)
