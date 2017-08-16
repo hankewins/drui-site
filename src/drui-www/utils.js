@@ -70,12 +70,12 @@ export function adjustImageLocation(dom) {
 
         const description = getAttr(img, "description")
         let width = getAttr(img, "width")
-        width = width === "" ? "" : `width="${width}"`
+        width = width === "" ? "" : `width: ${width}`
         let height = getAttr(img, "height")
-        height = height === "" ? "" : `height="${height}"`
+        height = height === "" ? "" : `;height: ${height}`
         return `
             <div class="md-image clearfix" style="${align}">
-                <img src="${src}" ${width} ${height} />
+                <img src="${src}" style="${width} ${height}" />
                 <strong>${alt}</strong>
                 <p>${description}</p>
             </div>

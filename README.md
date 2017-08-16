@@ -16,7 +16,7 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 ![](docs/create-new-file.png)
 
-编写文档，可以点击`preview`预览写好的文档。
+编写文档，可以点击`preview`预览写好的文档。请在需要换行的时候，按两下回车键，多空出一行，而不是单纯的换行。
 
 ![](docs/file-content.png)
 
