@@ -24,7 +24,6 @@ no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 <img src="../images/dr-logo.png" alt="需要添加的标题" description="一些解释性文字" align="right" />
 
-
 模块一|hello|foo
 ------|-----|---
 hello|world|drui
