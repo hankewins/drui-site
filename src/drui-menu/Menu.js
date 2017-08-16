@@ -17,6 +17,7 @@ const Border = styled.div`
     background-color: #fff;
     box-shadow: 1px 0 0 0 #eaedf2;
     height: 100%;
+    max-height: 100vh;
     overflow-y: scroll;
     z-index: 2;
     &::-webkit-scrollbar {
