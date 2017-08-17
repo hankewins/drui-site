@@ -28,7 +28,12 @@ const Body = styled.div`
     }
 
     h1, h2, h3, h4, h5, h6 {
+        font-weight: 400;
         clear: both;
+    }
+
+    ol {
+        padding-left: 1rem;
     }
 
     h2 {
@@ -45,7 +50,16 @@ const Body = styled.div`
     p, li {
         font-size: 13px;
         color: #7e848c;
-        line-height: 1.5;
+        line-height: 1.8;
+        margin: .5rem 0;
+    }
+
+    a {
+        color: #00bc8d;
+        text-decoration: none;
+        &:visited {
+            color: #00bc8d;
+        }
     }
 `
 
