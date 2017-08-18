@@ -13,12 +13,12 @@
           {
             "title": "设计理念",
             "path": "idea",
-            "content": "way.md"
+            "content": "design_philosophy.md"
           },
           {
             "title": "设计原则",
             "path": "principle",
-            "content": "way.md"
+            "content": "design_principle.md"
           }
         ]
       }
@@ -35,7 +35,7 @@
           {
             "title": "颜色",
             "path": "color",
-            "content": "way.md"
+            "content": "web_color.md"
           },
           {
             "title": "文字排版",
@@ -45,7 +45,7 @@
           {
             "title": "文案",
             "path": "document",
-            "content": "way.md"
+            "content": "writing_guideline.md"
           },
           {
             "title": "动效",
@@ -53,9 +53,14 @@
             "content": "way.md"
           },
           {
+            "title": "图标",
+            "path": "icon",
+            "content": "icons.md"
+          },
+          {
             "title": "无障碍",
             "path": "accessibility",
-            "content": "way.md"
+            "content": "accessibility.md"
           }
         ]
       },
@@ -71,12 +76,17 @@
           {
             "title": "导航栏 NavBar",
             "path": "navbar",
-            "content": "way.md"
+            "content": "mobileguide_nav.md"
           },
           {
             "title": "分段控件 SegmentedControl",
             "path": "segemnted",
-            "content": "way.md"
+            "content": "mobileguide_segment.md"
+          },
+          {
+            "title": "标签栏 TabBar",
+            "path": "tabbar",
+            "content": "mobileguide_tabbar.md"
           }
         ]
       },

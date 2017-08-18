@@ -2,9 +2,11 @@
 
 ## 主按钮置右
 
-<img src="http://odmhu1f2h.bkt.clouddn.com/15028514156925.png" width="375px" height="226px"  alt="正确" align="right"/>
+<img src="../images/mobile_guide/button_placeright_right.png" isCorrect  alt="正确" align="right"/>
 
-<img src="http://odmhu1f2h.bkt.clouddn.com/15028514236897.png" width="375px" height="226px" alt="错误" description="鼓励用户的行为需右置" align="right"/>
+<img src="../images/mobile_guide/button_placeright_wrong.png" alt="错误" isError description="鼓励用户的行为需右置" align="right"/>
+
+
 
 在同一个页面或者弹框中，当出现多个按钮以便让用户选择时，设计师应当引导用户点击更符合用户预期的主按钮(Primary Button)。
 
@@ -15,14 +17,12 @@
 通常按钮操作带有不同的情感色彩：
 
 1. 积极 - 立即投资、充值
-
 2. 消极 - 删除、关闭账户保护、取消排队
-
 3. 中立 - 关闭、我知道了、暂不XX
-
 4. 不可用状态
 
-<img src="http://odmhu1f2h.bkt.clouddn.com/15028514908856.png" width="375px" height="337px" align="right"/>
+<img src="../images/mobile_guide/button_suggestionmix.png" align="right"/>
+
 
 常用搭配
 
@@ -36,7 +36,7 @@
 
 设计师在验收设计时需要特别留意按钮的可点击区域，**尤其是纯文字按钮**。
 
-<img src="http://odmhu1f2h.bkt.clouddn.com/15028671339526.jpg" width="375px" height="262px" description="MIT实验指出指尖尺寸在8-10mm" align="right"/>
+<img src="http://odmhu1f2h.bkt.clouddn.com/15028671339526.jpg" description="MIT实验指出指尖尺寸在8-10mm" align="right"/>
 
 MIT Touch Lab的[实验报告](http://touchlab.mit.edu/publications/2003_009.pdf)指出多数人的指尖(Finger tip)尺寸在8-10mm,指垫(Finger pad)在10-14mm。
 
