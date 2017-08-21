@@ -1,0 +1,20 @@
+2017-08-21 18:09:34: -- Analysis Started by User
+2017-08-21 18:09:34: L: State file does not exist: /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/markdown/images/_gsdata_/_file_state_v4._gs
+2017-08-21 18:09:34: R: State file does not exist: /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/_gsdata_/_file_state_v4._gs
+2017-08-21 18:09:34: Left to Right: Copy File: 9 
+2017-08-21 18:09:34: Right to Left: Copy File: 8 
+2017-08-21 18:09:34: -- Analysis Complete. Time 00:00:00, Speed: Many files/s
+2017-08-21 18:09:34: 
+2017-08-21 18:10:32: New _gsdata_ folder(s) created, so rescan all job folders for their ghosts
+2017-08-21 18:10:32: == Sync Started by User
+2017-08-21 18:10:32: Delete File '/Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/markdown/images/icons/屏幕快照 2017-07-26 上午11.12.19.png' (User Action)
+2017-08-21 18:10:32: Move File /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/1.1 基础规范-2色板.png -> /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/webcolor_2.png
+2017-08-21 18:10:32: Move File /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/1.1 基础规范-3.png -> /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/webcolor_3.png
+2017-08-21 18:10:32: Move File /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/1.1 基础规范-4.png -> /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/webcolor_4.png
+2017-08-21 18:10:32: Move File /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/1.1 基础规范-5.png -> /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/webcolor_5.png
+2017-08-21 18:10:32: Move File /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/1.1 基础规范-6-c.png -> /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/webcolor_6.png
+2017-08-21 18:10:32: Move File /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/1.1 基础规范-6-e.png -> /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/webcolor_6e.png
+2017-08-21 18:10:32: Move File /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/1.1 基础规范-7-c.png -> /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/webcolor_7c.png
+2017-08-21 18:10:32: Move File /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/1.1 基础规范-7-e.png -> /Users/Ben/Dropbox/WorkProject/工作项目_2017/DianrongUI/drui_site/drui-site/src/drui-config/images/web_color/webcolor_7e.png
+2017-08-21 18:10:32: == Sync Complete. Time: 00:00:00, Speed: 0.0/s, OK: 75, Errors: 0
+2017-08-21 18:10:32: 

@@ -1,7 +1,7 @@
 # 无障碍 Accessibility
 点融各产品线的用户各异，其中不排除有视力、听力、肢体灵活度及认知能力较弱的用户，话客套话客套话客套话客套话bala bala…
 
-![Inclusive Design Showcase](../images/mobile_guide/Inclusive_Design_Showcase.png)
+![Inclusive Design Showcase](../images/mobile_guide/Inclusive%20Design%20Showcase.png)
 
 ## 无障碍为人人Accessible for all
 一直以来我们有一个误解，无障碍设计就是给身体有残疾的人做设计，而事实上我们每个人在生活中或多或少都会遇到有障碍的场景。微软的inclusive design研究小组从　## 降低产品使用门槛

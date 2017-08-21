@@ -97,7 +97,7 @@
           {
             "title": "按钮 Button",
             "path": "button",
-            "content": "guide_mobile_button.md"
+            "content": "mobileguide_button.md"
           },
           {
             "title": "文本输入 Text Fields",

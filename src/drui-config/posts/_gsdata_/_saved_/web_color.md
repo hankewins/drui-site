@@ -8,17 +8,17 @@
 
 
 
-<img src="../images/web_color/webcolor_1.png"  align="right"/>
+<img src="../images/web_color/1.1 基础规范-1.png"  align="right"/>
  
 ## 色板
 
 以点融线上品牌色为基准饱和度100%，明度74%，横向纬度创造14标准色色板，由于色彩本身视觉偏差，明度会有上下浮动，保证色彩视觉平衡。以下色板＃5为基础色，在向黑白过度中产生色阶，生成8种衍生色。
 
-![1.1 基础规范-2色板](../images/web_color/webcolor_2.png)
+![1.1 基础规范-2色板](../images/web_color/1.1%20%E5%9F%BA%E7%A1%80%E8%A7%84%E8%8C%83-2%E8%89%B2%E6%9D%BF.png)
 
 ## 色彩应用
 
-<img src="../images/web_color/webcolor_3.png" align="right">
+<img src="../images/web_color/1.1 基础规范-3.png" align="right">
 
 **品牌色**
 
@@ -27,7 +27,7 @@
 某些场景下，可以根据主色左右浮动变化来达到界面效果，呈现良好的视觉体验。
 
 
-<img src="../images/web_color/webcolor_4.png" align="right">
+<img src="../images/web_color/1.1 基础规范-4.png" align="right">
  
  **无彩色**
  
@@ -36,16 +36,16 @@
 在某些情况下，无彩色可以向有彩色偏移，来达到最优视觉效果，例如蓝灰，绿灰等..
 
 
-<img src="../images/web_color/webcolor_5.png" align="right">
+<img src="../images/web_color/1.1 基础规范-5.png" align="right">
  
  **功能色**
  
 除了品牌色外，还有具备特定含义的功能色，根据色彩语言定义功能本身的色彩，像成功、失败、等待、提醒等等...
  
  
-<img src="../images/web_color/webcolor_6.png" isCorrect alt="正确" description="列表展开的内容显示区域应该在第一信息层级下部，使用灰色" align="right">
+<img src="../images/web_color/1.1 基础规范-6-c.png" isCorrect alt="正确" description="列表展开的内容显示区域应该在第一信息层级下部，使用灰色" align="right">
   
-<img src="../images/web_color/webcolor_6e.png" isError alt="错误" description="列表展开此处不应该为平级关系" align="right">
+<img src="../images/web_color/1.1 基础规范-6-e.png" isError alt="错误" description="列表展开此处不应该为平级关系" align="right">
    
 **视觉层次**
 
@@ -53,9 +53,9 @@
 
 
 
-<img src="../images/web_color/webcolor_7c.png" isCorrect alt="正确" description="文字在颜色区域中显示直观清晰" align="right">
+<img src="../images/web_color/1.1 基础规范-7-c.png" isCorrect alt="正确" description="文字在颜色区域中显示直观清晰" align="right">
 
-<img src="../images/web_color/webcolor_7e.png" isError alt="错误" description="避免对比太小，造成识别性差" align="right">
+<img src="../images/web_color/1.1 基础规范-7-e.png" isError alt="错误" description="避免对比太小，造成识别性差" align="right">
 
 **识别性**
 在点融色板使用中与文字需要保持清晰识别性。
