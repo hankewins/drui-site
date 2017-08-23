@@ -1,7 +1,8 @@
 .idea/
 .vscode/
 node_modules/
-.DS_Store/
+_gsdata_
+.DS_Store
 
 npm-error.log
 yarn-error.log
