@@ -82,6 +82,17 @@ DRUI Design guide line site 点融UXUI设计文档站
 
 ![](docs/image-preview.png)
 
+多图片
+
+```html
+<div hasmanyimage>
+    <img data-many="true" data-isError="true" src="../images/dr-logo.png" alt="需要添加的标题" description="一些解释性文字" align="right" />
+    <img data-many="true" data-isRight="true" src="../images/dr-logo.png" alt="需要添加的标题" description="一些解释性文字" align="right" />
+</div>
+```
+
+正确和错误需要写`data-isError="true"`和`data-isError="true"`
+
 ## 附录
 
 [markdown 语法学习](https://guides.github.com/features/mastering-markdown/)

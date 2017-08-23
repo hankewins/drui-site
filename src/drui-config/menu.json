@@ -30,7 +30,6 @@
     "menu": [
       {
         "title": "基础规范",
-        "path": "basicguide",
         "menu": [
           {
             "title": "颜色",
