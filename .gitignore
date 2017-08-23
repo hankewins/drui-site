@@ -1,6 +1,7 @@
 .idea/
 .vscode/
 node_modules/
+_gsdata_
 .DS_Store
 
 npm-error.log
