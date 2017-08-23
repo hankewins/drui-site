@@ -42,16 +42,39 @@
   }
 
   .md-image {
-    max-width: 450px;
     display: block;
     margin: 0 1rem;
     img {
-        width: 100%;
+        &.error {
+            border-bottom: 2px solid #F04134;
+        }
+        &.right {
+            border-bottom: 2px solid #42C447;
+        }
     }
     strong {
         display: block;
         margin: .9rem 0;
     }
+
+    .item {
+        margin: 0 .5rem;
+    }
+  }
+  .md-images {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+          width: 100%;
+      }
+
+      & > div {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+      }
   }
 }
 

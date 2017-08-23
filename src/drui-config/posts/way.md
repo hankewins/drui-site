@@ -22,7 +22,11 @@ no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ## 其他章节
 
-<img src="../images/dr-logo.png" alt="需要添加的标题" description="一些解释性文字" align="right" />
+<div hasmanyimage>
+    <img data-many="true" data-isError="true" src="../images/dr-logo.png" alt="需要添加的标题" description="一些解释性文字" align="right" />
+    <img data-many="true" data-isRight="true" src="../images/dr-logo.png" alt="需要添加的标题" description="一些解释性文字" align="right" />
+</div>
+
 
 模块一|hello|foo
 ------|-----|---
