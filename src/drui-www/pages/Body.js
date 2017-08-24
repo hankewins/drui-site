@@ -71,6 +71,33 @@ class Content extends React.Component {
     componentDidMount() {
         const { cate, sub } = this.props.params
         this.loadContent(cate, sub)
+
+        window.addEventListener('click', this.jumpTo)
+    }
+
+    // markdown 中可以文章章节可以跳转
+    jumpTo = e => {
+        const target = e.target
+        if (target.tagName.toUpperCase() === 'A') {
+            const href = target.getAttribute('href')
+            // 过滤掉 react-router 的跳转
+            if (href.indexOf('#') === 0 && href.indexOf('#/') === -1) {
+                const d = document.querySelector(`[data-id="${decodeURIComponent(href)}"]`)
+                if (d) {
+                    console.log(d)
+                    d.scrollIntoView()
+                }
+                console.log(`[data-id="${decodeURIComponent(href)}"]`)
+
+                // 没有找到，则说明可能不存在, 先阻止掉
+                e.preventDefault()
+                return
+            }
+        }
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('click', this.jumpTo)
     }
 
     loadContent(cate, sub) {
@@ -105,7 +132,10 @@ class Content extends React.Component {
 
     render() {
         return (
-            <Body dangerouslySetInnerHTML={{ __html: this.state.content }} />
+            <Body
+                dangerouslySetInnerHTML={{ __html: this.state.content }}
+                ref={dom => { this.dom = dom }}
+            />
         )
     }
 

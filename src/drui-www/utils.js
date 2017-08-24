@@ -70,7 +70,7 @@ function renderSingleImg(src, alt, description, isError, isRight) {
         <div class="item">
             <img src="${src}" class="${err ? "error" : ""} ${right ? "right" : ""}" style="width: 100%" />
             <strong>${alt || ''}</strong>
-            <p>${description || ''}</p>
+            <p>${description || ' '}</p>
         </div>
     `
 }
@@ -110,6 +110,22 @@ function transformSingleImage(img) {
 }
 
 /**
+ * 转换 head 标签，加上id，方便跳转
+ * @param string dom
+ * @return string
+ */
+function transformHeadTag(dom) {
+    let result = /<h(\d)>(.*)<\/h\d>/.exec(dom)
+
+    if (!result || result.length !== 3) {
+        return dom
+    }
+    const headNum = result[1]
+    const content = result[2]
+    return `<h${headNum} data-id="#${content}">${content}</h${headNum}>`
+}
+
+/**
  * @param string dom
  * @return string
  */
@@ -118,6 +134,7 @@ export function adjustImageLocation(dom) {
     // 顺序很重要
     const result = dom.replace(/<img.*src=".*".*\/?>/g, transformSingleImage)
         .replace(/<div ?hasmanyimage="">([\s\S])*?<\/div>/g, transformManyImages)
+        .replace(/<h(\d)>(.*)<\/h\d>/g, transformHeadTag)
     return result
 }
 
