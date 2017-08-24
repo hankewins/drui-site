@@ -72,11 +72,11 @@ class Content extends React.Component {
         const { cate, sub } = this.props.params
         this.loadContent(cate, sub)
 
-        window.addEventListener('click', this.jumpTo)
+        window.addEventListener('click', this.jump)
     }
 
     // markdown 中可以文章章节可以跳转
-    jumpTo = e => {
+    jump = e => {
         const target = e.target
         if (target.tagName.toUpperCase() === 'A') {
             const href = target.getAttribute('href')
@@ -97,7 +97,7 @@ class Content extends React.Component {
     }
 
     componentWillUnmount() {
-        window.removeEventListener('click', this.jumpTo)
+        window.removeEventListener('click', this.jump)
     }
 
     loadContent(cate, sub) {
@@ -134,7 +134,6 @@ class Content extends React.Component {
         return (
             <Body
                 dangerouslySetInnerHTML={{ __html: this.state.content }}
-                ref={dom => { this.dom = dom }}
             />
         )
     }
