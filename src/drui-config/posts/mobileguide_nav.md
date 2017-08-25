@@ -4,9 +4,10 @@
 
 导航栏分为导航区、标题区、操作区。
 
+## 导航区：
+
 <img src="../images/mobile_guide/Navbar_H5.png" description="H5页面的导航中，iOS与Android差异较大" align="right"/>
 
-## 导航区：
 导航区帮助用户退出当前页面。当页面以Naviagtion View 呈现时通常使用「返回」；当页面以Model View呈现时通常使用「关闭」。
 根据设计的需要，一级页面的导航若使用「汉堡包菜单」，也将在导航区呈现。
 
