@@ -39,7 +39,7 @@
           {
             "title": "文字排版",
             "path": "textlayout",
-            "content": "way.md"
+            "content": "Text-Typography.md"
           },
           {
             "title": "文案",
@@ -49,7 +49,7 @@
           {
             "title": "动效",
             "path": "animation",
-            "content": "way.md"
+            "content": "motion.md"
           },
           {
             "title": "图标",
@@ -101,17 +101,12 @@
           {
             "title": "文本输入 Text Fields",
             "path": "textfields",
-            "content": "way.md"
+            "content": "mobileguide_textfield.md"
           },
           {
             "title": "键盘 Keyboard",
             "path": "keyboard",
-            "content": "way.md"
-          },
-          {
-            "title": "标签栏 TabBar",
-            "path": "tabbar",
-            "content": "way.md"
+            "content": "mobileguide_keyboard.md"
           }
         ]
       },
@@ -122,17 +117,17 @@
           {
             "title": "列表 List",
             "path": "list",
-            "content": "way.md"
+            "content": "mobileguide_list.md"
           },
           {
             "title": "通知栏 Notice Bar",
             "path": "noticebar",
-            "content": "way.md"
+            "content": "mobileguide_noticebar.md"
           },
           {
             "title": "步骤条 Steps",
             "path": "steps",
-            "content": "way.md"
+            "content": "mobileguide_steps.md"
           }
         ]
       },
@@ -143,17 +138,17 @@
           {
             "title": "加载指示 Acitvity Indicator",
             "path": "indicator",
-            "content": "way.md"
+            "content": "mobileguide_activityindicator.md"
           },
           {
             "title": "提示 Toast",
             "path": "toast",
-            "content": "way.md"
+            "content": "mobileguide_toast.md"
           },
           {
             "title": "弹出对话框 Modal View",
             "path": "modal",
-            "content": "way.md"
+            "content": "mobileguide_modalview.md"
           }
         ]
       },
@@ -211,10 +206,198 @@
     "path": "repo",
     "menu": [
       {
-        "title": "设计理念",
-        "path": "idea",
-        "content": "way.md"
+        "title": "Web组件库",
+        "path": "webcomp",
+        "menu": [
+          {
+            "title": "字体 Typography",
+            "path": "typography",
+            "content": "way.md"
+          },
+          {
+            "title": "登录 Login",
+            "path": "login",
+            "content": "way.md"
+          },
+          {
+            "title": "布局 Layout",
+            "path": "Layout",
+            "content": "way.md"
+          },
+          {
+            "title": "导航菜单 Menu",
+            "path": "menu",
+            "content": "way.md"
+          },
+          {
+            "title": "标签页 Tabs",
+            "path": "tabs",
+            "content": "way.md"
+          },
+          {
+            "title": "面包屑 Breadcrumber",
+            "path": "Breadcrumber",
+            "content": "way.md"
+          },
+          {
+            "title": "按钮 Button",
+            "path": "Button",
+            "content": "way.md"
+          },
+          {
+            "title": "上传 Upload",
+            "path": "Upload",
+            "content": "way.md"
+          },
+          {
+            "title": "穿梭框 Transfer",
+            "path": "Transfer",
+            "content": "way.md"
+          }
+        ]
+      },
+      {
+        "title": "数据输入 Data Entry",
+        "path": "data_entry",
+        "menu": [
+          {
+            "title": "表单 Form",
+            "path": "form",
+            "content": "way.md"
+          },
+          {
+            "title": "输入框 Input",
+            "path": "input",
+            "content": "way.md"
+          },
+          {
+            "title": "选择器 Select",
+            "path": "Select",
+            "content": "way.md"
+          },
+          {
+            "title": "日期选择框 DatePicker",
+            "path": "DatePicker",
+            "content": "way.md"
+          }
+        ]
+      },
+      {
+        "title": "控件 Control",
+        "path": "control",
+        "menu": [
+          {
+            "title": "多选框 Checkbox",
+            "path": "Checkboxes",
+            "content": "way.md"
+          },
+          {
+            "title": "单选框 Radio Button",
+            "path": "Radio_Buttons",
+            "content": "way.md"
+          },
+          {
+            "title": "下拉菜单 Dropdown",
+            "path": "Dropdown",
+            "content": "way.md"
+          },
+          {
+            "title": "开关 Switch",
+            "path": "Switch",
+            "content": "way.md"
+          },
+          {
+            "title": "步骤条 Steps",
+            "path": "Steps",
+            "content": "way.md"
+          },
+          {
+            "title": "分页 Pagination",
+            "path": "Pagination",
+            "content": "way.md"
+          },
+          {
+            "title": "滑动输入条 Slider",
+            "path": "Slider",
+            "content": "way.md"
+          }
+        ]
+      },
+      {
+        "title": "数据展示 Data Display",
+        "path": "data_display",
+        "menu": [
+          {
+            "title": "折叠面板 Collapse",
+            "path": "Collapse",
+            "content": "way.md"
+          },
+          {
+            "title": "卡片 Cards",
+            "path": "Cards",
+            "content": "way.md"
+          },
+          {
+            "title": "气泡卡片 Popover",
+            "path": "Popover",
+            "content": "way.md"
+          },
+          {
+            "title": "文字提示 ToolTip",
+            "path": "ToolTip",
+            "content": "way.md"
+          },
+          {
+            "title": "表格 Table",
+            "path": "Table",
+            "content": "way.md"
+          },
+          {
+            "title": "树形控件 Tree",
+            "path": "Tree",
+            "content": "way.md"
+          }
+        ]
+      },
+      {
+        "title": "操作反馈 Feedback",
+        "path": "feedback",
+        "menu": [
+          {
+            "title": "警告提示 Alert",
+            "path": "Alert",
+            "content": "way.md"
+          },
+          {
+            "title": "对话框 Dialog",
+            "path": "Dialogs",
+            "content": "way.md"
+          },
+          {
+            "title": "全局提示 Message",
+            "path": "Message",
+            "content": "way.md"
+          },
+          {
+            "title": "通知提醒 Notification",
+            "path": "Notification",
+            "content": "way.md"
+          },
+          {
+            "title": "进度条 Progress",
+            "path": "Progress",
+            "content": "way.md"
+          },
+          {
+            "title": "加载状态 Loading",
+            "path": "Loading",
+            "content": "way.md"
+          }
+
+
+        ]
       }
+
     ]
   }
 ]
