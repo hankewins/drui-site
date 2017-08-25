@@ -43,7 +43,7 @@
 
   .md-image {
     display: block;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
     img {
         &.error {
             border-bottom: 2px solid #F04134;
@@ -57,14 +57,19 @@
         margin: .9rem 0;
     }
 
-    .item {
-        margin: 0 .5rem;
-    }
   }
   .md-images {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+
+      &.md-image {
+          margin: 0 1rem;
+
+          .item {
+              margin: 0 .5rem;
+          }
+      }
 
       img {
           width: 100%;
