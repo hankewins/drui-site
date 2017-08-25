@@ -61,6 +61,13 @@ const Body = styled.div`
             color: #00bc8d;
         }
     }
+
+    blockquote {
+        background-color: #eee;
+        border-left: .4em solid #e4e4e4;
+        margin: 1em 0 1em 0;
+        padding: .4em .4em;
+    }
 `
 
 class Content extends React.Component {
