@@ -68,6 +68,33 @@ const Body = styled.div`
         margin: 1em 0 1em 0;
         padding: .4em .4em;
     }
+
+    table {
+        background: #ffffff;
+        border: 1px solid #e5e5e5;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        thead tr:first-child {
+            background-color: #f7f7f7;
+        }
+        tbody tr:nth-child(2n) {
+            background-color: #f7f7f7;
+        }
+
+        td, th {
+            /* padding: .6923rem 1.077rem; */
+            padding: .6923rem 4.15rem .6923rem 1.077rem;
+            color: #333333;
+            border: 0;
+            white-space: nowrap;
+        }
+
+        thead th {
+            font-weight: 500;
+            color: #7e848c;
+        }
+    }
 `
 
 class Content extends React.Component {
