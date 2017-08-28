@@ -111,6 +111,23 @@ DRUI Design guide line site 点融UXUI设计文档站
 </div>
 ```
 
+多列图片布局：
+
+```html
+<div>
+    <div hasmanyimage>
+        <img src="../images/web_color/webcolor_6.png" data-many="true" data-isRight="true" alt="正确" description="列表展开的内容显示区域应该在第一信息层级下部，使用灰色" align="right" />
+        <img src="../images/web_color/webcolor_6e.png" data-many="true" data-isError="true" alt="错误" description="列表展开此处不应该为平级关系" align="right" />
+    </div>
+    <div hasmanyimage>
+        <img src="../images/web_color/webcolor_6.png" data-many="true" data-isRight="true" alt="正确" description="列表展开的内容显示区域应该在第一信息层级下部，使用灰色" align="right" />
+        <img src="../images/web_color/webcolor_6e.png" data-many="true" data-isError="true" alt="错误" description="列表展开此处不应该为平级关系" align="right" />
+    </div>
+</div>
+```
+
+如果有两个 hasmanyimage 属性的内容，则为两行，如果有三个，则为三行
+
 ## 附录
 
 [markdown 语法学习](https://guides.github.com/features/mastering-markdown/)
