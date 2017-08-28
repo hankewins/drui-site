@@ -7,7 +7,11 @@
 
 文字是用来记录语言的视觉符号体系，是人类交流沟通的工具，是信息的载体。
 
-> 「世界各地的文字不是一盘散沙，而是一个有共同规律的人类文字系统。」——周有光 `*1`
+<blockquote
+
+> 「世界各地的文字不是一盘散沙，而是一个有共同规律的人类文字系统。——周有光 `*1`
+
+</blockquote>
 
 如果你碰巧翻看过关于世界文字的发展简史之类的文章，你会发现各个国家地区的文字都在向彼此靠拢。由地中海沿岸国家发展起源的拉丁字母，到中世纪逐渐成熟后开始扩展至西方世界，如今早已是全球任何一个地方都在使用的文字。现在中国的拼音文字也吸收了他作为本国的辅助文字。
 
@@ -49,13 +53,13 @@
 
 如果优化排版，减少阅读时间，也许用户在前几秒的第一印象就决定看完这段字，提高吸引度。
 
+### Ⅴ. 电脑手机差异化排版（Diversity）
+
 由于台式电脑屏幕大容纳文字多，可以用更多的样式和排版，比如标题跟正文的字号对比比例可以很大，但是手机排版这一数字要减小到合适手机尺寸的比例。
 
 -------
 
-### 一个标题可能只有几个字，听起来不需要特别照顾，只需按照默认设置即可。
-### 而一段字，似乎多注意下行间距和页面左右间距就完成排版了。
-### 但若你是个更加挑剔的设计师，你实际上需要考虑的有——
+### 一个标题可能只有几个字，听起来不需要特别照顾，只需按照默认设置即可。而一段字，似乎多注意下行间距和页面左右间距就完成排版了。但若你是个更加挑剔的设计师，你实际上需要考虑的有——
 
 ### Ⅰ. 字词间距（CSS: letter-spacing, word-spacing）
 
@@ -138,42 +142,44 @@
 
 # Typography in Practice: 文字排版具体应用
 
-## 一、iOS & Android
+## 一、iOS & Android 字型，文字排版
 
-## 一般用系统默认字型，默认文字排版
+### 一般用系统默认
 
 幸好互联网科技发展快，屏显中文苛刻者这 2 年以来也不愁原来的界面文字华文黑体影响视力卫生了，苹果的中文苹方和英文 SF 乃天作之合；谷歌领导的思源黑体成为 Android 手机默认字体和英文 Roboto 也是珠联璧合，2013 年起施惠于更大的份额市场。谷歌和苹果两大系统为其操作系统和之外推出了各自的设计语言供设计业者使用，我们可以免费地站在两大巨人的肩膀上，设计出更好的版面、设计。如果没有时间精力定制自家字型，遵守苹果和谷歌的语言规范里的文字排版，是不二之选。
 
-* ### Ⅰ. Android 原生 OS 使用谷歌 Material Design 设计语言之 [文字排版定义](https://material.io/guidelines/style/typography.html)
+* Ⅰ. Android 原生 OS 使用谷歌 Material Design 设计语言之 [文字排版定义](https://material.io/guidelines/style/typography.html)
 
-* ### Ⅱ. 字型使用谷歌 [Roboto & Noto fonts](https://material.io/guidelines/resources/roboto-noto-fonts.html)
+* Ⅱ. 字型使用谷歌 [Roboto & Noto fonts](https://material.io/guidelines/resources/roboto-noto-fonts.html)
 
-* ### Ⅲ. iOS 使用苹果 Human Interface Guidelines 设计语言之 [文字排版定义](https://developer.apple.com/ios/human-interface-guidelines/visual-design/typography/)
+* Ⅲ. iOS 使用苹果 Human Interface Guidelines 设计语言之 [文字排版定义](https://developer.apple.com/ios/human-interface-guidelines/visual-design/typography/)
 
-* ### Ⅳ. 字型使用苹果 macOS 苹方和 [SF Pro (San Francisco)](https://developer.apple.com/fonts/)
+* Ⅳ. 字型使用苹果 macOS 苹方和 [SF Pro (San Francisco)](https://developer.apple.com/fonts/)
 
-## 某种字型的字重字号定义例子
+### 某种字型的字重字号定义例子
 
 这是一个示例，你当然可以根据你的设计需要定制自己的。
 
 ![iPhone @2x 设计尺寸下](../images/Text-Typography/2-Type-Size-2x.png)
 
 
-## 做设计稿 (iOS) 时
+### 做设计稿 (iOS) 时
 
-* ### Ⅰ. 字号大于 20pt 的位置使用 [SF Pro Display](https://developer.apple.com/fonts/)
+* Ⅰ. 字号大于 20pt 的位置使用 [SF Pro Display](https://developer.apple.com/fonts/)
 
-* ### Ⅱ. sketch.app 可使用 [schwa23/cleanupsfui](https://github.com/schwa23/cleanupsfui) 插件来自动帮你把设计稿里的 SF UI Text & SF UI Display 文字图层字间距模拟成 iOS 实际手机屏幕显示的字间距，并把 20pt / 40px 以上的文本自动换成 Display
+* Ⅱ. sketch.app 可使用 [schwa23/cleanupsfui](https://github.com/schwa23/cleanupsfui) 插件来自动帮你把设计稿里的 SF UI Text & SF UI Display 文字图层字间距模拟成 iOS 实际手机屏幕显示的字间距，并把 20pt / 40px 以上的文本自动换成 Display
 
-* ### Ⅲ. 字号小于 20pt 的位置使用 [SF Pro Text](https://developer.apple.com/fonts/)
+* Ⅲ. 字号小于 20pt 的位置使用 [SF Pro Text](https://developer.apple.com/fonts/)
 
-* ### Ⅳ. sketch.app 可使用 [automat/sketch-text-tools](https://github.com/automat/sketch-text-tools) 插件来对齐文字图层的基线、X 高、大写高度等
+* Ⅳ. sketch.app 可使用 [automat/sketch-text-tools](https://github.com/automat/sketch-text-tools) 插件来对齐文字图层的基线、X 高、大写高度等
 
-## 协作开发实现字间距、字重、行高、段宽等细节属性
+### 协作开发实现字间距、字重、行高、段宽等细节属性
 
-## 嵌入定制字型时不可任性跟风使用流行字型，慎重
+### 嵌入定制字型时不可任性跟风使用流行字型，慎重
 
-    实现中文 App 字型嵌入所需参考资源——
+<blockquote
+
+> 实现中文 App 字型嵌入所需参考资源——
 
 * [上海驿创](www.etrump.net/vnews.asp?id=731)
 
@@ -181,23 +187,25 @@
 
 * [方正字库·开放云平台](http://yun.foundertype.com/?utm_frm=shop)
 
-## 中英混合文字分开定义，不可只用中文字型
+</blockquote>
 
-    中英双语文字图层 double check 用英文字型覆盖图层保证英文字族显示正确。
+### 中英混合文字分开定义，不可只用中文字型
+
+中英双语文字图层 double check 用英文字型覆盖图层保证英文字族显示正确。
 
 -------
 
-## 二、Web / HTML5 字型
+## 二、Web / HTML5 字型，文字排版
 
-## 一般用系统默认字型，文字排版
+### 一般用系统默认
 
-* ### Ⅰ. macOS 使用苹果 Human Interface Guidelines 设计语言之 [文字排版定义](https://developer.apple.com/macos/human-interface-guidelines/visual-design/typography/)
+* Ⅰ. macOS 使用苹果 Human Interface Guidelines 设计语言之 [文字排版定义](https://developer.apple.com/macos/human-interface-guidelines/visual-design/typography/)
 
-* ### Ⅱ. 字型使用苹果 macOS 苹方和 [SF Pro (San Francisco)](https://developer.apple.com/fonts/)
+* Ⅱ. 字型使用苹果 macOS 苹方和 [SF Pro (San Francisco)](https://developer.apple.com/fonts/)
 
-* ### Windows 使用微软 Fluent Design System 设计语言之 [文字排版定义](https://docs.microsoft.com/zh-cn/windows/uwp/style/typography)
+* Ⅲ. Windows 使用微软 Fluent Design System 设计语言之 [文字排版定义](https://docs.microsoft.com/zh-cn/windows/uwp/style/typography)
 
-* ### Ⅳ. 字型使用 Windows Segoe UI，雅黑字型也可选用其他如 SF，苹方，包括谷歌 [Roboto & Noto fonts](https://material.io/guidelines/resources/roboto-noto-fonts.html)
+* Ⅳ. 字型使用 Windows Segoe UI，雅黑字型也可选用其他如 SF，苹方，包括谷歌 [Roboto & Noto fonts](https://material.io/guidelines/resources/roboto-noto-fonts.html)
 
 ### Universal font-family 设置
 
@@ -212,44 +220,56 @@
 
 ### 中英混合文字分开定义，不可只用中文字型
 
-中英双语文字图层 double check 用英文字型覆盖图层保证英文字族显示正确。
+### 中英双语文字图层 double check 用英文字型覆盖图层保证英文字族显示正确
 
 ### 中英混合文字分开定义，不可只用中文字型
 
 ### 定制字型时
 
-* 使用  Web Font 字型时不可任性跟风使用流行字型，慎重
-* 英文 Web Font 前置于 font-family; 中文 Web Font 前置于 font-family
-* 实现中文 Web Font 所需参考资源——
+使用  Web Font 字型时不可任性跟风使用流行字型，慎重。
 
-#### Ⅰ. [Fontmin](http://ecomfe.github.io/fontmin/) ；[Fontmin 应用](http://efe.baidu.com/blog/chinese-font-build/)
+英文 Web Font 前置于 font-family; 中文 Web Font 前置于 font-family。
 
-#### Ⅱ. [字蛛](http://font-spider.org/)
+<blockquote>
 
-#### Ⅲ. [有字库](https://www.youziku.com/)
+> 实现中文 Web Font 所需参考资源——
 
-#### Ⅳ. [justfont 就是字](http://cn.justfont.com/)
+* Ⅰ. [Fontmin](http://ecomfe.github.io/fontmin/) ；[Fontmin 应用](http://efe.baidu.com/blog/chinese-font-build/)
 
-#### Ⅴ. [上海驿创](www.etrump.net/vnews.asp?id=731)
+* Ⅱ. [字蛛](http://font-spider.org/)
 
-#### Ⅵ. [汉仪字库·网页用字](www.hanyi.com.cn/solutionItem2.php)
+* Ⅲ. [有字库](https://www.youziku.com/)
 
-#### Ⅶ. [方正字库·开放云平台](http://yun.foundertype.com/?utm_frm=shop)
+* Ⅳ. [justfont 就是字](http://cn.justfont.com/)
 
-### 实现英文 Web Font 所需参考资源——
+* Ⅴ. [上海驿创](www.etrump.net/vnews.asp?id=731)
 
-#### Ⅰ. [Google Fonts](https://fonts.google.com/)
+* Ⅵ. [汉仪字库·网页用字](www.hanyi.com.cn/solutionItem2.php)
 
-#### Ⅱ. [Fonts.com Web Fonts](http://font-spider.org/)
+* Ⅶ. [方正字库·开放云平台](http://yun.foundertype.com/?utm_frm=shop)
 
-#### Ⅲ. [Adobe Typekit](https://typekit.com/plans)
+</blockquote>
 
-### Ⅳ. [Webfonts on MyFonts](https://www.myfonts.com/info/webfonts/)
+<blockquote>
 
-## em 单位的使用
+> 实现英文 Web Font 所需参考资源——
+
+* Ⅰ. [Google Fonts](https://fonts.google.com/)
+
+* Ⅱ. [Fonts.com Web Fonts](http://font-spider.org/)
+
+* Ⅲ. [Adobe Typekit](https://typekit.com/plans)
+
+* Ⅳ. [Webfonts on MyFonts](https://www.myfonts.com/info/webfonts/)
+
+</blockquote>
+
+### em 单位的使用
 
 你在看不同的屏幕时距离不同。在台式电脑的屏幕上 12px 里看起来很小，但在手机上看起来则还好；另外旧的  IE  也无法使用 px 单位进行响应式设计显示，但 em 可以。em 作为字体的单位，比 px 更先进的地方在于它可以跨设备显示更优秀，因为 em 是相对长度单位，是对应对象容器内文本的基础字号进行换算的尺寸。类似于 Android 平台的 dp 单位。
+
 1em 等于当前的字号，2em 等于当前字号的两倍。例如，如果字号是 16 px，那么 1 em 是 16 px；如果字号是 12 pt，那么 2 em 就等于 24 pt。
+
 下面是在 CSS 里一个使用 em 为字体单位设置的例子：
 
 ```
@@ -292,6 +312,9 @@ span {
 
 ### 中文文字、排版延伸阅读
  
+<blockquote>
+
+> 
 
 * [Typo.css - 中文网页重设与排版](https://typo.sofi.sh/)
 
@@ -311,9 +334,15 @@ span {
 
 * [维基百科:格式手册/标点符号](https://zh.wikipedia.org/wiki/Wikipedia:格式手册/标点符号)
 
+</blockquote>
+
 -------
 
 ### 英文文字、排版延伸阅读
+
+<blockquote>
+
+> 
 
 * [PIXEL PERFECT PRECISION](http://cdn.ustwo.com/PPP/PP3.pdf)
 
@@ -322,6 +351,8 @@ span {
 * [Fontology - fonts.com](https://www.fonts.com/content/learning/fontology)
 
 * [The Elements of Typographic Style Applied to the Web](http://webtypography.net/intro/)
+
+</blockquote>
 
 -------
 
