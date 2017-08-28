@@ -64,7 +64,7 @@
         ]
       },
       {
-        "title": "移动控件规范",
+        "title": "移动设计规范",
         "path": "mobilecompguide",
         "type": "black"
       },
@@ -151,58 +151,11 @@
             "content": "mobileguide_modalview.md"
           }
         ]
-      },
-      {
-        "title": "核心业务流程",
-        "path": "matrix",
-        "type": "black",
-        "menu": [
-          {
-            "title": "注册登录",
-            "path": "m_login",
-            "content": "way.md"
-          },
-          {
-            "title": "账户保护",
-            "path": "m_accountprotect",
-            "content": "way.md"
-          },
-          {
-            "title": "实名认证与绑卡",
-            "path": "m_cardverify",
-            "content": "way.md"
-          },
-          {
-            "title": "充值流程",
-            "path": "m_deposit",
-            "content": "way.md"
-          },
-          {
-            "title": "提现流程",
-            "path": "m_withdraw",
-            "content": "way.md"
-          },
-          {
-            "title": "证件扫描",
-            "path": "m_scan",
-            "content": "way.md"
-          },
-          {
-            "title": "优惠券与券包",
-            "path": "m_coupon",
-            "content": "way.md"
-          },
-          {
-            "title": "人脸识别",
-            "path": "m_facerecognize",
-            "content": "way.md"
-          }
-        ]
       }
     ]
   },
   {
-    "title": "组件库",
+    "title": "Web组件库",
     "path": "repo",
     "menu": [
       {
@@ -212,47 +165,47 @@
           {
             "title": "字体 Typography",
             "path": "typography",
-            "content": "way.md"
+            "content": "webguide_Typography.md"
           },
           {
             "title": "登录 Login",
             "path": "login",
-            "content": "way.md"
+            "content": "webguide_Login.md"
           },
           {
             "title": "布局 Layout",
             "path": "Layout",
-            "content": "way.md"
+            "content": "webguide_Layout.md"
           },
           {
             "title": "导航菜单 Menu",
             "path": "menu",
-            "content": "way.md"
+            "content": "webguide_Menu.md"
           },
           {
             "title": "标签页 Tabs",
             "path": "tabs",
-            "content": "way.md"
+            "content": "webguide_Tabs.md"
           },
           {
             "title": "面包屑 Breadcrumber",
             "path": "Breadcrumber",
-            "content": "way.md"
+            "content": "webguide_Breadcrumber.md"
           },
           {
             "title": "按钮 Button",
             "path": "Button",
-            "content": "way.md"
+            "content": "webguide_Button.md"
           },
           {
             "title": "上传 Upload",
             "path": "Upload",
-            "content": "way.md"
+            "content": "webguide_Upload.md"
           },
           {
             "title": "穿梭框 Transfer",
             "path": "Transfer",
-            "content": "way.md"
+            "content": "webguide_Transfer.md"
           }
         ]
       },
@@ -263,22 +216,22 @@
           {
             "title": "表单 Form",
             "path": "form",
-            "content": "way.md"
+            "content": "webguide_Form.md"
           },
           {
             "title": "输入框 Input",
             "path": "input",
-            "content": "way.md"
+            "content": "webguide_Input.md"
           },
           {
             "title": "选择器 Select",
             "path": "Select",
-            "content": "way.md"
+            "content": "webguide_Select.md"
           },
           {
             "title": "日期选择框 DatePicker",
             "path": "DatePicker",
-            "content": "way.md"
+            "content": "webguide_DatePicker.md"
           }
         ]
       },
@@ -289,37 +242,37 @@
           {
             "title": "多选框 Checkbox",
             "path": "Checkboxes",
-            "content": "way.md"
+            "content": "webguide_Checkbox.md"
           },
           {
             "title": "单选框 Radio Button",
             "path": "Radio_Buttons",
-            "content": "way.md"
+            "content": "webguide_RadioButton.md"
           },
           {
             "title": "下拉菜单 Dropdown",
             "path": "Dropdown",
-            "content": "way.md"
+            "content": "webguide_Dropdown.md"
           },
           {
             "title": "开关 Switch",
             "path": "Switch",
-            "content": "way.md"
+            "content": "webguide_Switch.md"
           },
           {
             "title": "步骤条 Steps",
             "path": "Steps",
-            "content": "way.md"
+            "content": "webguide_Steps.md"
           },
           {
             "title": "分页 Pagination",
             "path": "Pagination",
-            "content": "way.md"
+            "content": "webguide_Pagination.md"
           },
           {
             "title": "滑动输入条 Slider",
             "path": "Slider",
-            "content": "way.md"
+            "content": "webguide_Slider.md"
           }
         ]
       },
@@ -330,32 +283,32 @@
           {
             "title": "折叠面板 Collapse",
             "path": "Collapse",
-            "content": "way.md"
+            "content": "webguide_Collapse.md"
           },
           {
             "title": "卡片 Cards",
             "path": "Cards",
-            "content": "way.md"
+            "content": "webguide_Cards.md"
           },
           {
             "title": "气泡卡片 Popover",
             "path": "Popover",
-            "content": "way.md"
+            "content": "webguide_Popover.md"
           },
           {
             "title": "文字提示 ToolTip",
             "path": "ToolTip",
-            "content": "way.md"
+            "content": "webguide_Tooltip.md"
           },
           {
             "title": "表格 Table",
             "path": "Table",
-            "content": "way.md"
+            "content": "webguide_Table.md"
           },
           {
             "title": "树形控件 Tree",
             "path": "Tree",
-            "content": "way.md"
+            "content": "webguide_Tree.md"
           }
         ]
       },
@@ -366,32 +319,32 @@
           {
             "title": "警告提示 Alert",
             "path": "Alert",
-            "content": "way.md"
+            "content": "webguide_Alert.md"
           },
           {
             "title": "对话框 Dialog",
             "path": "Dialogs",
-            "content": "way.md"
+            "content": "webguide_Dialogs.md"
           },
           {
             "title": "全局提示 Message",
             "path": "Message",
-            "content": "way.md"
+            "content": "webguide_Message.md"
           },
           {
             "title": "通知提醒 Notification",
             "path": "Notification",
-            "content": "way.md"
+            "content": "webguide_Notification.md"
           },
           {
             "title": "进度条 Progress",
             "path": "Progress",
-            "content": "way.md"
+            "content": "webguide_Progress.md"
           },
           {
-            "title": "加载状态 Loading",
+            "title": "加载状态 Spin",
             "path": "Loading",
-            "content": "way.md"
+            "content": "webguide_Spin.md"
           }
 
 
