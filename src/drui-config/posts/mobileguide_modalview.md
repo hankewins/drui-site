@@ -5,7 +5,7 @@
 
 标准弹出对话框有标题、正文、行动选项组成。遇到特殊情况可以去除标题，也可加入图片以便更有效得传达信息。
 
-<div style="display:flex;">
+<div class="drui-md-multi-images">
 
 <img src="../images/mobile_guide/modalview_1.png"  description="带标题" align="left"/>
 
