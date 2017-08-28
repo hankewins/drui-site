@@ -38,6 +38,7 @@ const NavWithStyle = styled.nav`
         margin: 0 20px;
         font-size: 16px;
         color: #666666;
+        white-space: nowrap;
         &:hover {
             color: ${activeColor};
         }

@@ -43,7 +43,9 @@
 
   .md-image {
     display: block;
-    /* margin: 0 1rem; */
+    .item {
+        margin-left: 2.3rem;
+    }
     img {
         &.error {
             border-bottom: 2px solid #F04134;
@@ -89,6 +91,9 @@
       display: flex;
       & > div {
           margin-right: 2.3rem;
+          .item {
+              margin: 0;
+          }
           &:last-child {
               margin-right: 0;
           }

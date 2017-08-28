@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import highlight from 'highlight.js'
 import { findContentURL, adjustImageLocation } from '../utils'
 
 // add markdown style define here
@@ -95,6 +96,16 @@ const Body = styled.div`
             color: #7e848c;
         }
     }
+
+    // 代码块
+    pre {
+        font-family: "Source Code Pro", "PT Mono", "Ubuntu Mono", "Lucida Console", "Andale Mono", monospace;
+        background-color: #f0f0f0;
+        margin: 1em 0 1em 0;
+        padding: .4em .4em;
+        overflow: auto;
+        white-space: pre-wrap;
+    }
 `
 
 class Content extends React.Component {
@@ -132,6 +143,12 @@ class Content extends React.Component {
 
     componentWillUnmount() {
         window.removeEventListener('click', this.jump)
+    }
+
+    componentDidUpdate() {
+        Array.from(document.querySelectorAll('pre code') || []).forEach(block => {
+            highlight.highlightBlock(block)
+        })
     }
 
     loadContent(cate, sub) {

@@ -1,3 +1,27 @@
+
+```js
+const a = 'hello'
+console.log(a)
+```
+
+```python
+def say(hello):
+    print(hello)
+```
+
+```scheme
+(+ 1 1)
+(define hello 2)
+```
+
+```go
+package main
+func main() {
+    fmt.Println("hello world")
+}
+```
+
+
 # 色彩原则
 
 色彩是最直接传达给用户的元素，在设计中要遵从基本色彩语言，继承品牌，体现产品属性及用户定位等特点，同时色彩还需要指引操作、传达反馈等使交互更清晰。DianRongUI的色彩在应用上需要注意以下几点：
