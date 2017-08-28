@@ -82,8 +82,6 @@ function transformManyImages(dom) {
         const [alt, src, align, description, isError, isRight] = getImageAttr(dom)
         return renderSingleImg(src, alt, description, isError, isRight)
     }).join('')
-
-    // TODO: add images
     return `
         <div class="md-image md-images" style="width:66%; float: right;">${imgs}</div>
     `
