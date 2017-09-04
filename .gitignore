@@ -3,7 +3,7 @@
 node_modules/
 _gsdata_
 .DS_Store
-
+drcp-workspace
 npm-error.log
 yarn-error.log
 

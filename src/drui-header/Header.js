@@ -33,7 +33,7 @@ const NavWithStyle = styled.nav`
     a {
         text-decoration: none;
         padding: 1.65rem 0;
-        width: 80px;
+        min-width: 80px;
         text-align: center;
         margin: 0 20px;
         font-size: 16px;
@@ -90,4 +90,3 @@ Header.propTypes = {
 }
 
 export default withRouter(Header)
-
